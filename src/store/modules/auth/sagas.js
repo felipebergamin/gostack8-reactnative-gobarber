@@ -1,4 +1,4 @@
-import Alert from 'react-native';
+import { Alert } from 'react-native';
 import { all, call, takeLatest, put } from 'redux-saga/effects';
 
 import api from '~/services/api';
@@ -40,7 +40,6 @@ export function* signUp({ payload }) {
       name,
       email,
       password,
-      provider: true,
     });
   } catch (err) {
     Alert.alert('Falha no cadastro', 'Verifique os dados digitados');

@@ -5,7 +5,7 @@ import reactotronSaga from 'reactotron-redux-saga';
 // eslint-disable-next-line no-undef
 if (__DEV__) {
   const tron = Reactotron.configure({
-    host: '192.168.44.103',
+    host: '10.42.0.1',
   })
     .useReactNative()
     .use(reactotronRedux())
